@@ -1,0 +1,19 @@
+{
+  "name": "chatcord",
+  "version": "1.0.0",
+  "description": "Web Socket based Chat app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilhenry/chatcord.git"
+  },
+  "author": "Nikhil Henry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikhilhenry/chatcord/issues"
+  },
+  "homepage": "https://github.com/nikhilhenry/chatcord#readme"
+}
