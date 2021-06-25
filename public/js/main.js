@@ -1,5 +1,6 @@
 // @ts-nocheck
 const chatForm = document.getElementById("chat-form");
+const chatMessage = document.querySelector(".chat-messages");
 
 // @ts-ignore
 const socket = io();
@@ -8,6 +9,9 @@ const socket = io();
 socket.on("message", (message) => {
   console.log(message);
   outputMessage(message);
+
+  // Scroll down to message
+  chatMessage.scrollTop = chatMessage.scrollHeight;
 });
 
 // message submit
@@ -19,6 +23,10 @@ chatForm.addEventListener("submit", (e) => {
 
   // emit to server
   socket.emit("chatMessage", msg);
+
+  // clear input
+  e.target.elements.msg.value = "";
+  e.target.elements.msg.focus();
 });
 
 // Output message to DOM
