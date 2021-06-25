@@ -4,8 +4,8 @@
   "description": "Web Socket based Chat app",
   "main": "server.js",
   "scripts": {
-    "dev":"nodemon server",
-    "start":"node server"
+    "dev": "nodemon server",
+    "start": "node server"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "socket.io": "^4.1.2"
   },
   "devDependencies": {
+    "@types/socket.io": "^3.0.2",
     "nodemon": "^2.0.7"
   }
 }
