@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/nikhilhenry/chatcord/issues"
   },
-  "homepage": "https://github.com/nikhilhenry/chatcord#readme"
+  "homepage": "https://github.com/nikhilhenry/chatcord#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
